@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+ 
+   <header>
+    <div class="navbar">
+    <div class="logo"><a href="#">wed dev ceativ</a></div>
+    <ul class="links">
+        <li><a href="hero">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="services">servicss</a></li>
+        <li><a href="contact">Contact</a></li>
+    </ul>
+    <a href="#" class="action_btn">Get started</a>
+    <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    </div>
+
+    <div class="dropdown_menu">
+        <li><a href="hero">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="services">servicss</a></li>
+        <li><a href="contact">Contact</a></li><li>
+      <li>    <a href="#" class="action_btn">Get started</a></li>
+    </div>
+   </header>
+   <div class="social-icons">
+    <a href="https://www.linkedin.com/in/abdalsalam-aljazayerly-b06134337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/share/16LefGc8R4/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/apd_al_slam?utm_source=qr&igsh=MWxhbnhycjBhcXppcg==" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.threads.net/@apd_al_slam" target="_blank"><i class="fas fa-globe"></i></a>
+</div>
+
+
+   <main>
+    <section id="hero">
+        <h1>Welcome</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur <br />
+             adipisicing elit.Aliquam,atque.
+        </p>
+    </section>
+   </main>
+
+   <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtncon = document.querySelector('.toggle_btn i')
+    const dropdownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick =function(){
+        dropdownMenu.classList.toggle('open')
+        const isOpen = dropdownMenu.classList.contains('opem')
+
+        toggleBtncon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+   </script>
+</body>
+</html>
